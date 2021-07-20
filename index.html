@@ -23,7 +23,9 @@
     </script>
 </head>
 
-<body>
+<body onload="document.getElementById('loading').style.display = 'none';document.getElementById('content').style.display = 'block';">
+<div id="loading">Some loading text or icon goes here...</div>
+<div id="content" style="display:none;">
     <!-- Progress-wrapp scroll-button -->
     <div class="progress-wrap">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -65,6 +67,7 @@
 					<li><a href="https://www.youtube.com/channel/UCD3eBLJG1ulzUg-RS49blvA"><i class="fab fa-youtube"></i></a></li>
                 </ul>
                 <p><small>&copy; 2021 Giridhar CP. All rights reserved.</small></p>
+
             </div>
         </aside>
         <!-- Content -->
@@ -176,16 +179,19 @@
                 </div>
             </div>
             <!-- About Me -->
+			<a href="#" target="_blank">
+                   
             <div class="annie-homepage-about">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 offset-md-2 text-center profile-index animate-box" data-animate-effect="fadeInUp">
                           <p class="annie-about-me">I am a passionate computer programmer,a lover of music-art-literature and anything that has life and intensity in them. I choose to be morbidly curious. Life has everything that I need to find fulfillment and I'm living to have a better question rather than answer .</p>
                         <img src="images/sign.png" class="annie-about-signature" alt=""> </div>
+						
                     </div>
                 </div>
             </div>
-            <!-- Gallery -->
+		   <!-- Gallery -->
             <div class="annie-homepage-gallery">
                 <div class="container-fluid">
                     <div class="row align-items-stretch annie-photos" id="annie-section-photos">
@@ -414,6 +420,8 @@
                 <div class="annie-narrow-content">
                     <div class="row">
                         <div class="col-md-12 text-center">
+
+         
                             <h1>Giridhar CP <span>Paradoxically Orthodox Thiest</span></h1>
                             <p class="annie-lead">&copy; 2021 All rights reserved by Giridhar</p>
                         </div>
@@ -421,6 +429,7 @@
                 </div>
             </div>
         </div>
+		
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -432,6 +441,7 @@
         <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/main.js"></script>
     </div>
+</div>
 </body>
 
 <!-- Mirrored from duruthemes.com/demo/html/annie/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 May 2021 14:50:42 GMT -->
